@@ -1,15 +1,50 @@
 @import 'normalize.css';
 
+@font-face {
+    font-family: "roboto_regular";
+    src: url(fonts/roboto-regular-webfont.woff) format("woff"),
+    url(fonts/roboto-regular-webfont.woff2) format("woff2");
+    }
+    
+@font-face {
+    font-family: "roboto_italic";
+    src: url(fonts/roboto-italic-webfont.woff) format("woff"),
+    url(fonts/roboto-italic-webfont.woff2) format("woff2");
+    }
+    
+    
+@font-face {
+    font-family: "roboto_bold";
+    src: url(fonts/roboto-bold-webfont.woff) format("woff"),
+    url(fonts/roboto-bold-webfont.woff2) format("woff2");
+    }
+    
+    
+@font-face {
+    font-family: "theboldfont";
+    src: url(fonts/theboldfont-webfont.woff) format("woff"),
+    url(fonts/theboldfont-webfont.woff2) format("woff2");
+    }
+    
+/* makes global edits such as background and text color */
 * {
     background-color: black;
     color: white;
     font-size: 100%;
 }
 
+/* makes font into boldfont */
+.theboldfont { 
+    font-family: "theboldfont";
+}
+
+
 .wrapper {
     text-align: center;
     font-size: 3rem;
-
+    padding: 0 .5rem;
+    margin-bottom: 2rem;
+    
 }
 
 .container {
@@ -29,22 +64,40 @@
 }
 
 .project_content {
-    width: 40%;
+    width: 90%;
     align-content: center;
-    text-align: center;
-
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin: 1rem 1rem;
+    padding: 0 .5rem;
+    padding-bottom: 1rem;
 }
 
+.imgresize {
+    max-width: 75%;
+}
 
-ul li {
-    font-size: 4rem;
-    display: flex;
-    justify-content: center;
+body {
+    text-align: center;
+    font-family: "roboto_regular";
+    }
+    
+
+
+nav ul li {
+    font-size: 2rem;
+
     list-style: none;
 
 }
 
 ul {
+    padding: 0;
+    margin: 2em 0;
+}
+
+nav ul {
     padding: 0;
     margin: 2em 0;
 }
@@ -56,4 +109,192 @@ a:visited {
 a:link {
     color: white;
     text-decoration: none;
+}
+
+
+p {
+    text-align: left;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    margin: 1rem 1rem;
+    padding: 0 .5rem;
+    padding-bottom: 1rem;
+}
+
+
+/**
+main page welcome  blurb
+*/
+.welcome {
+    text-align: center;
+    font-size: 1.75em;
+    line-height: 1.1em;
+    margin: 1 auto;
+    padding-bottom: 1rem;
+    
+}
+
+/**
+pic of self on home page
+*/
+.self {
+    max-width: 90%;
+    border: 2px solid darkgray;
+    box-shadow: 3px 3px 3px lightgray;
+}
+
+/**
+main page about me paragraphs
+*/
+.intro {
+    margin: 1 auto;
+    font-size: 1.5rem;
+    text-align: left;
+}
+/** restyle for about me header */
+h1 {
+    font-size: 1.5em;
+    margin: 1em 0 .5em 0;
+}
+
+
+/* tile system for projects*/
+
+.tile {
+    max-width: 50%;
+    justify-content: center;
+    border: 2px solid white;
+    padding: .5rem;
+    margin: 1rem 0 2rem 0;
+
+}
+
+div .tile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Floating Back-To-Top Button*/
+#myBtn {
+    position: fixed;
+    bottom: 10px;
+    float: right;
+    right: 18.5%;
+    left: 77.25%;
+    max-width: 30px;
+    width: 100%;
+    font-size: 12px;
+    border-color: black;
+    background-color:black;
+    padding: .5px;
+    border-radius: 4px;
+
+}
+
+#footlogo{
+    
+    padding: 2em 0 1rem 0;
+    width: 40%;
+}
+
+.nav_parent {
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    padding: 1rem 5rem;
+
+}
+
+.nav_child {
+
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.mainlogo {
+    width: 100%;
+}
+
+@media screen and (min-width: 600px){
+    .mainlogo {
+        width: 100%;
+    }
+
+
+    .nav_parent {
+
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+
+    }
+    .nav_child {
+
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+
+    
+    }
+
+    ul li {
+        padding: 0 .5rem;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .nav_parent {
+
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+
+}
+
+@media screen and (min-width: 600px){
+
+    .welcome {
+        width: 450px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+     .wrapper {
+        width: 600px;
+        display: inline-block;
+        flex-flow: column nowrap;
+        justify-content: center;
+        text-align: center;
+        
+    }
+}
+
+.welcome_parent{
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.welcome_child {
+
+    display: inline-block;
+
+
 }
