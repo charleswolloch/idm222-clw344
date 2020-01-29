@@ -269,6 +269,7 @@ div .tile {
         display: flex;
         flex-wrap: wrap;
         align-content: center;
+        line-height: 2.5rem;
     }
 
      .wrapper {
