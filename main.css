@@ -74,6 +74,17 @@
     padding-bottom: 1rem;
 }
 
+@media screen and (min-width: 660px){
+
+.project_content {
+    width: 70%;
+    text-align: center;
+    margin: auto 7rem;
+}
+
+}
+
+
 .imgresize {
     max-width: 75%;
 }
@@ -140,20 +151,30 @@ pic of self on home page
 .self {
     max-width: 90%;
     border: 2px solid darkgray;
-    box-shadow: 3px 3px 3px lightgray;
+    
 }
+
+/**
+@keyframes greyFil{
+    from{filter: greyscale(0%);}
+    to{filter: greyscale(100%);}
+}
+*/
+
 
 /**
 main page about me paragraphs
 */
+
 .intro {
     margin: 1 auto;
     font-size: 1.5rem;
     text-align: left;
 }
+
 /** restyle for about me header */
 h1 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin: 1em 0 .5em 0;
 }
 
@@ -161,13 +182,16 @@ h1 {
 /* tile system for projects*/
 
 .tile {
-    max-width: 50%;
+    width: 12rem;
+    height: 12rem;
     justify-content: center;
     border: 2px solid white;
     padding: .5rem;
     margin: 1rem 0 2rem 0;
 
 }
+
+
 
 div .tile {
     display: flex;
@@ -220,6 +244,28 @@ div .tile {
 .mainlogo {
     width: 100%;
 }
+
+.gallery {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+@media screen and (min-width: 660px){
+
+    .gallery {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+}
+
+
+
 
 @media screen and (min-width: 600px){
     .mainlogo {
@@ -299,3 +345,4 @@ div .tile {
 
 
 }
+
