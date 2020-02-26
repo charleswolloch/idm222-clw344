@@ -76,11 +76,23 @@
 
 @media screen and (min-width: 660px){
 
-.project_content {
+    .project_content {
+
     width: 70%;
-    text-align: center;
-    margin: auto 7rem;
+    margin: auto;
+
+    }
+
 }
+
+@media screen and (min-width: 900px){
+
+    .project_content {
+
+    width: 50%;
+    margin: auto;
+
+    }
 
 }
 
