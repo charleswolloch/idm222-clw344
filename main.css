@@ -3,29 +3,29 @@
 @font-face {
     font-family: "roboto_regular";
     src: url(fonts/roboto-regular-webfont.woff) format("woff"),
-    url(fonts/roboto-regular-webfont.woff2) format("woff2");
-    }
-    
+        url(fonts/roboto-regular-webfont.woff2) format("woff2");
+}
+
 @font-face {
     font-family: "roboto_italic";
     src: url(fonts/roboto-italic-webfont.woff) format("woff"),
-    url(fonts/roboto-italic-webfont.woff2) format("woff2");
-    }
-    
-    
+        url(fonts/roboto-italic-webfont.woff2) format("woff2");
+}
+
+
 @font-face {
     font-family: "roboto_bold";
     src: url(fonts/roboto-bold-webfont.woff) format("woff"),
-    url(fonts/roboto-bold-webfont.woff2) format("woff2");
-    }
-    
-    
+        url(fonts/roboto-bold-webfont.woff2) format("woff2");
+}
+
+
 @font-face {
     font-family: "theboldfont";
     src: url(fonts/theboldfont-webfont.woff) format("woff"),
-    url(fonts/theboldfont-webfont.woff2) format("woff2");
-    }
-    
+        url(fonts/theboldfont-webfont.woff2) format("woff2");
+}
+
 /* makes global edits such as background and text color */
 * {
     color: white;
@@ -33,14 +33,14 @@
 }
 
 
-body{
+body {
 
-    background-color:black;
-background: linear-gradient(90deg, rgba(94,94,94,1) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(94,94,94,1) 100%) !important;
+    background-color: black;
+    background: linear-gradient(90deg, rgba(94, 94, 94, 1) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(94, 94, 94, 1) 100%) !important;
 }
 
 /* makes font into boldfont */
-.theboldfont { 
+.theboldfont {
     font-family: "theboldfont";
 }
 
@@ -50,7 +50,7 @@ background: linear-gradient(90deg, rgba(94,94,94,1) 0%, rgba(0,0,0,1) 10%, rgba(
     font-size: 3rem;
     padding: 0 .5rem;
     margin-bottom: 2rem;
-    
+
 }
 
 .container {
@@ -80,23 +80,23 @@ background: linear-gradient(90deg, rgba(94,94,94,1) 0%, rgba(0,0,0,1) 10%, rgba(
     padding-bottom: 1rem;
 }
 
-@media screen and (min-width: 660px){
+@media screen and (min-width: 660px) {
 
     .project_content {
 
-    width: 70%;
-    margin: auto;
+        width: 70%;
+        margin: auto;
 
     }
 
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 900px) {
 
     .project_content {
 
-    width: 50%;
-    margin: auto;
+        width: 50%;
+        margin: auto;
 
     }
 
@@ -116,8 +116,8 @@ background: linear-gradient(90deg, rgba(94,94,94,1) 0%, rgba(0,0,0,1) 10%, rgba(
 body {
     text-align: center;
     font-family: "roboto_regular";
-    }
-    
+}
+
 
 
 nav ul li {
@@ -135,6 +135,20 @@ ul {
 nav ul {
     padding: 0;
     margin: 2em 0;
+}
+
+li a:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+    /* add your code below this line */
+    animation-fill-mode: forwards;
+    /* add your code above this line */
+}
+
+@keyframes background-color {
+    100% {
+        color: purple;
+    }
 }
 
 a:visited {
@@ -166,7 +180,7 @@ main page welcome  blurb
     line-height: 1.1em;
     margin: 1 auto;
     padding-bottom: 1rem;
-    
+
 }
 
 /**
@@ -175,7 +189,7 @@ pic of self on home page
 .self {
     max-width: 90%;
     border: 2px solid darkgray;
-    
+
 }
 
 /**
@@ -235,14 +249,14 @@ div .tile {
     width: 100%;
     font-size: 12px;
     border-color: black;
-    background-color:black;
+    background-color: black;
     padding: .5px;
     border-radius: 4px;
 
 }
 
-#footlogo{
-    
+#footlogo {
+
     padding: 2em 0 1rem 0;
     width: 40%;
 }
@@ -277,21 +291,21 @@ div .tile {
 
 }
 
-@media screen and (min-width: 660px){
+@media screen and (min-width: 660px) {
 
     .gallery {
         display: flex;
         flex-flow: row;
         justify-content: space-around;
         align-items: center;
-    
+
     }
 }
 
 
 
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 600px) {
     .mainlogo {
         width: 100%;
     }
@@ -304,6 +318,7 @@ div .tile {
         flex-wrap: wrap;
 
     }
+
     .nav_child {
 
         display: flex;
@@ -312,7 +327,7 @@ div .tile {
         justify-content: space-around;
         flex-direction: row;
 
-    
+
     }
 
     ul li {
@@ -320,7 +335,7 @@ div .tile {
     }
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 900px) {
     .nav_parent {
 
         display: flex;
@@ -332,7 +347,7 @@ div .tile {
 
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 600px) {
 
     .welcome {
         width: 450px;
@@ -342,17 +357,17 @@ div .tile {
         line-height: 2.5rem;
     }
 
-     .wrapper {
+    .wrapper {
         width: 600px;
         display: inline-block;
         flex-flow: column nowrap;
         justify-content: center;
         text-align: center;
-        
+
     }
 }
 
-.welcome_parent{
+.welcome_parent {
 
     display: flex;
     flex-flow: column;
@@ -373,27 +388,27 @@ div .tile {
 
 
 .resumeText {
-     text-align: center;
-     margin: auto;
-     font-size: 1.5rem;
+    text-align: center;
+    margin: auto;
+    font-size: 1.5rem;
 }
 
-.container {
+.resume-container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 33% 100px auto;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
-  }
+}
 
-  .resumeResize {
-      width: 70%;
-  }
+.resumeResize {
+    width: 70%;
+}
 
-  a.resumeLink {
+a.resumeLink {
     color: magenta;
-  }
+}
 
-  a.resumeLink:hover {
+a.resumeLink:hover {
     color: magenta;
     text-decoration: underline magenta !important;
-  }
+}
